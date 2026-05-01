@@ -36,7 +36,7 @@ If the user asks for both, run `review` first to identify issues, then ask befor
 3. Apply `references/revision-checklist.md` sequentially: scope setup, precision, concision, tone, scientific rigor, and final audit.
 4. Preserve citations and factual claims unless the user provides evidence for a correction. If a claim is unsupported, keep the text conservative or insert a visible verification note rather than fabricating support.
 5. Prefer objective active voice with the data, model, method, or literature as the subject.
-6. Remove orphan facts, redundant modifiers, crutch transitions, unsupported hyperbole, and repeated arguments.
+6. Remove orphan facts, redundant modifiers, unsupported hyperbole, repeated arguments, and transition words that do not mark a clear logical relationship.
 7. Check numerical consistency, percentage logic, figure/table sequencing, equation-variable definitions, and citation specificity when the required materials are available.
 8. Return a concise revision log after the edited text or edited file, noting major changes to claims, structure, terminology, and evidence support.
 

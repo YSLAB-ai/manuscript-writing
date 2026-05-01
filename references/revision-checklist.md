@@ -94,13 +94,15 @@ Example: A historical detail about a material should be removed unless it direct
 
 Check for repetitive looping of the exact same argument across a paragraph or section. Make the point clearly once and advance the narrative.
 
-- [ ] **Delete Crutch Transitions**
+- [ ] **Use Transitions Only for Clear Logical Relationships**
 
-Remove overused transition words, such as "Furthermore", "Moreover", "Additionally", "Consequently", and "Therefore". Connect sentences logically by linking the subject of the new sentence to the object of the previous one.
+Permit transition words, such as "Furthermore", "Moreover", "Additionally", "Consequently", and "Therefore", only when they accurately mark a clear logical relationship. Remove them when they merely decorate the prose or disguise a weak connection. When possible, connect sentences by linking the subject of the new sentence to the object of the previous one.
 
 Bad: "Furthermore, the device shows reduced degradation. Moreover, this behavior supports the design."
 
 Good: "The reduced degradation supports the device design."
+
+Acceptable: "The measured resistance increased after thermal cycling. Therefore, the analysis treats cycling as a stress condition rather than a neutral storage interval."
 
 ## Phase 3: Tone and Formatting Calibration
 
