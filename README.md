@@ -93,9 +93,11 @@ For Claude Code:
 
 ## Example
 
-The before text below is a user-provided example of AI-written prose. The after text demonstrates the skill's editing style; factual claims still need source verification before manuscript use.
+The image below demonstrates `review` mode: the source text remains unchanged while the skill marks weak spots and explains why they need attention.
 
-![tracked-change style manuscript-writing demo](assets/demo-track-changes.svg)
+![manuscript-writing review demo](assets/demo-review.png)
+
+The paragraph below is a user-provided example of AI-written prose. The revised version demonstrates `revision` mode under the current checklist: preserve technical meaning, remove hyperbole, hedge unsupported causality, permit logical transitions, and flag claims that require citations.
 
 ### Before
 
@@ -105,31 +107,38 @@ The before text below is a user-provided example of AI-written prose. The after 
 >
 > In short, every memory we form is the result of billions of neurons communicating, adapting, and reorganizing themselves--an elegant biological symphony that turns the chaos of daily life into the coherent story of our lives.
 
-### Tracked-Change Style Excerpt
+### Review Mode Comments
 
-> Memory formation in the human brain is <del>one of the most remarkable and intricate processes in biology</del> <ins>a multi-scale process</ins>, transforming <del>fleeting moments of experience into lasting knowledge, emotions, and skills that define who we are</del> <ins>sensory experience into neural representations that can later support knowledge, emotion, and skill</ins>.
-
-| Change | Why |
+| Checklist item | Flagged text | Suggested action |
 | --- | --- |
-| Removed "remarkable", "intricate", and "elegant biological symphony" | Strips hyperbole and metaphor-heavy prose. |
-| Replaced "memory librarian" and "hard-wiring" | Uses mechanistic language instead of informal analogy. |
-| Softened "which is why" and "proves" style causality | Avoids overstating mechanism without cited evidence. |
-| Removed "billions of neurons" | Avoids an unsupported numerical magnitude. |
-| Added boundary language | Makes clear that claims need citation and context. |
+| Strip hyperbole | "remarkable", "intricate", "elegant biological symphony" | Replace subjective praise with specific mechanisms. |
+| Explain or remove metaphors | "memory librarian", "hard-wiring" | Use mechanistic terms or define the analogy briefly. |
+| Calibrate certainty | "which is why we vividly remember" | Hedge unless cited evidence supports the causal claim. |
+| Verify numerical claims | "billions of neurons" | Cite the magnitude or remove it. |
+| Use transitions logically | "In short" | The transition can stay if the sentence accurately summarizes the preceding evidence; the overgeneralized claim still needs revision. |
+| Verify citation coverage | claims about working memory, hippocampus, LTP, amygdala, sleep, and cortical storage | Add citations or mark these claims as needing verification. |
 
-### After
+### Revision Mode Output
 
-> Memory formation converts sensory experience into neural representations that can later support knowledge, emotion, and skill. Sensory inputs are encoded as electrochemical neural activity and can be maintained briefly in working memory, with the prefrontal cortex contributing to short-term maintenance. Longer-lasting memories require encoding and consolidation. The hippocampus supports consolidation by linking new experiences with existing representations.
+> Memory formation converts sensory experience into neural representations that can support later retrieval, learning, and behavior. Sensory information is encoded as neural activity. Selected information can be maintained transiently in working memory, with prefrontal networks contributing to maintenance and control [citation needed]. Longer-lasting memories require encoding and consolidation. The hippocampus contributes to consolidation by binding elements of an experience and linking new information with existing representations [citation needed].
 >
-> At the cellular level, memory formation depends on synaptic plasticity, the activity-dependent strengthening or weakening of connections between neurons. Repeated or salient activity can increase synaptic efficacy through mechanisms such as long-term potentiation (LTP). Emotional salience can modulate consolidation through the amygdala, which may contribute to stronger recall of emotionally significant events. Over hours to days, including during sleep-dependent consolidation, initially labile traces can become more stable and distributed across cortical networks.
+> At the cellular level, memory formation depends in part on synaptic plasticity, the activity-dependent strengthening or weakening of synaptic connections. Repeated or salient neural activity can increase synaptic efficacy through mechanisms such as long-term potentiation (LTP), but LTP should not be treated as the only mechanism without specifying the memory type, model system, and evidence base [citation needed]. Emotional salience can modulate consolidation through amygdala-hippocampal interactions, which may contribute to stronger recall of emotionally significant events [citation needed]. Over hours to days, including during sleep, initially labile traces can become more stable and distributed across cortical networks [citation needed].
 >
-> Thus, memory formation is not a single event but a multi-scale process spanning sensory encoding, synaptic modification, systems-level consolidation, and later retrieval. This framing replaces metaphor-heavy prose with mechanisms that can be cited, tested, and bounded by evidence.
+> Thus, memory formation is a multi-scale process spanning sensory encoding, synaptic modification, systems-level consolidation, and retrieval. A manuscript-ready version should specify the memory type, species or model system, measurement method, and citation support for each mechanistic claim.
+
+### Revision Log
+
+- Removed subjective intensifiers and metaphor-heavy phrasing.
+- Replaced broad identity-focused language with evidence-bounded scientific claims.
+- Hedged causal statements about emotional salience and recall.
+- Kept a logical summary transition where it accurately connects the conclusion to the preceding paragraph.
+- Added citation placeholders instead of inventing support.
 
 ### Needs Verification
 
 - Add citations for the roles of working memory, the prefrontal cortex, hippocampal consolidation, synaptic plasticity, LTP, amygdala modulation, and sleep-dependent consolidation.
+- Confirm whether the paragraph should remain general or be narrowed to a specific memory type, species or model system, method, or evidence base.
 - Verify whether the intended audience needs simplified definitions for LTP, consolidation, and cortical redistribution.
-- Confirm whether the paragraph should remain general or be narrowed to a specific memory type, organism, method, or evidence base.
 
 ## Repository Layout
 
@@ -137,7 +146,7 @@ The before text below is a user-provided example of AI-written prose. The after 
 SKILL.md
 README.md
 assets/hero.png
-assets/demo-track-changes.svg
+assets/demo-review.png
 agents/openai.yaml
 references/revision-checklist.md
 ```
