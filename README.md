@@ -14,12 +14,10 @@ Both modes read `references/revision-checklist.md` before acting and follow the 
 ### Codex
 
 ```bash
-python3 /path/to/install-skill-from-github.py \
-  --repo YSLAB-ai/manuscript-writing \
-  --path . \
-  --name manuscript-writing \
-  --method git
+git clone https://github.com/YSLAB-ai/manuscript-writing.git ~/.codex/skills/manuscript-writing
 ```
+
+If `CODEX_HOME` is set, install into `$CODEX_HOME/skills/manuscript-writing` instead.
 
 ### Claude Code
 
