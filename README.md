@@ -95,6 +95,8 @@ For Claude Code:
 
 The before text below is a user-provided example of AI-written prose. The after text demonstrates the skill's editing style; factual claims still need source verification before manuscript use.
 
+![before and after manuscript-writing demo](assets/demo-before-after.png)
+
 ### Before
 
 > Memory formation in the human brain is one of the most remarkable and intricate processes in biology, transforming fleeting moments of experience into lasting knowledge, emotions, and skills that define who we are. It begins the instant we perceive the world through our senses--sights, sounds, smells, and touches are rapidly converted into electrical and chemical signals that travel along neural pathways. These signals first enter short-term or working memory, a temporary "holding area" supported by the prefrontal cortex. For information to endure, it must undergo encoding and consolidation, a process heavily orchestrated by the hippocampus, which acts as a kind of "memory librarian," indexing new experiences and linking them to existing knowledge.
@@ -135,6 +137,7 @@ The before text below is a user-provided example of AI-written prose. The after 
 SKILL.md
 README.md
 assets/hero.png
+assets/demo-before-after.png
 agents/openai.yaml
 references/revision-checklist.md
 ```
