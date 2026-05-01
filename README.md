@@ -95,6 +95,8 @@ The paragraph below is a user-provided example of AI-written prose. The revised 
 | Codex | `${CODEX_HOME:-$HOME/.codex}/skills/manuscript-writing` | `Use $manuscript-writing ...` |
 | Claude Code | `~/.claude/skills/manuscript-writing` or `.claude/skills/manuscript-writing` | `/manuscript-writing ...` |
 | OpenClaw | `~/.openclaw/skills/manuscript-writing` or `skills/manuscript-writing` | Use when the request matches the skill description |
+| Generic AI agent with web or repo access | Send the repo link: `https://github.com/YSLAB-ai/manuscript-writing` | Ask it to read `SKILL.md` and follow `references/revision-checklist.md` |
+| Web-based AI chat, such as ChatGPT or Gemini | Send the repo link if the chat can open URLs; otherwise paste `SKILL.md` and `references/revision-checklist.md` | Ask for `revision` mode to edit text or `review` mode to list suggestions only |
 
 ## Install
 
