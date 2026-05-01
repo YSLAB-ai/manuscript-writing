@@ -8,7 +8,7 @@
 
 `manuscript-writing` is an installable `SKILL.md` skill for revising and reviewing scientific, technical, and academic writing.
 
-A few years ago, dissertation polishing meant a committee comment, a reference manager, and a 2 a.m. argument with Track Changes. This repo gives Claude, Codex, and OpenClaw a stricter manuscript checklist so they stop majoring in "sounds academic" and start dressing their claims in evidence, boundaries, and citations.
+A few years ago, dissertation polishing meant a committee comment, a reference manager, and a 2 a.m. argument with Track Changes. This repo plays the toughest committee member for your AI assistant: every claim gets questioned, every vague flourish gets circled, and only evidence-bounded prose gets to walk across the stage.
 
 ## What It Does
 
