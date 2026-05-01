@@ -65,9 +65,9 @@ The paragraph below is a user-provided example of AI-written prose. The revised 
 
 > Memory formation converts sensory experience into neural representations that can support later retrieval, learning, and behavior. Sensory information is encoded as neural activity. Selected information can be maintained transiently in working memory, with prefrontal networks contributing to maintenance and control [citation needed]. Longer-lasting memories require encoding and consolidation. The hippocampus contributes to consolidation by binding elements of an experience and linking new information with existing representations [citation needed].
 >
-> At the cellular level, memory formation depends in part on synaptic plasticity, the activity-dependent strengthening or weakening of synaptic connections. Repeated or salient neural activity can increase synaptic efficacy through mechanisms such as long-term potentiation (LTP), but LTP should not be treated as the only mechanism without specifying the memory type, model system, and evidence base [citation needed]. Emotional salience can modulate consolidation through amygdala-hippocampal interactions, which may contribute to stronger recall of emotionally significant events [citation needed]. Over hours to days, including during sleep, initially labile traces can become more stable and distributed across cortical networks [citation needed].
+> At the cellular level, memory formation depends in part on synaptic plasticity, the activity-dependent strengthening or weakening of synaptic connections. Repetition or attention can increase synaptic efficacy through mechanisms such as long-term potentiation (LTP) [citation needed]. Emotional salience can modulate consolidation through the amygdala, which may contribute to stronger recall of emotionally significant events [citation needed]. Over hours to days, including during deep sleep, initially labile traces can become more stable and distributed across cortical networks [citation needed].
 >
-> Thus, memory formation is a multi-scale process spanning sensory encoding, synaptic modification, systems-level consolidation, and retrieval. A manuscript-ready version should specify the memory type, species or model system, measurement method, and citation support for each mechanistic claim.
+> Thus, memory formation is a multi-scale process spanning sensory encoding, synaptic modification, systems-level consolidation, and retrieval. A manuscript-ready version should cite each mechanistic claim and define the intended scope of the discussion.
 
 ### Revision Log
 
@@ -80,7 +80,7 @@ The paragraph below is a user-provided example of AI-written prose. The revised 
 ### Needs Verification
 
 - Add citations for the roles of working memory, the prefrontal cortex, hippocampal consolidation, synaptic plasticity, LTP, amygdala modulation, and sleep-dependent consolidation.
-- Confirm whether the paragraph should remain general or be narrowed to a specific memory type, species or model system, method, or evidence base.
+- Confirm whether the paragraph should remain general or be narrowed to a specific memory type, organism, method, or evidence base.
 - Verify whether the intended audience needs simplified definitions for LTP, consolidation, and cortical redistribution.
 
 ## Compatibility
