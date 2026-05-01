@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manuscript Writing"
+  short_description: "Revise or review academic manuscripts"
+  default_prompt: "Use $manuscript-writing to revise this academic manuscript for precision, concision, and scientific rigor."
