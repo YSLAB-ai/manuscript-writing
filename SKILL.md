@@ -38,7 +38,8 @@ If the user asks for both, run `review` first to identify issues, then ask befor
 5. Prefer objective active voice with the data, model, method, or literature as the subject.
 6. Remove orphan facts, redundant modifiers, unsupported hyperbole, repeated arguments, and transition words that do not mark a clear logical relationship.
 7. Check numerical consistency, percentage logic, figure/table sequencing, equation-variable definitions, and citation specificity when the required materials are available.
-8. Return a concise revision log after the edited text or edited file, noting major changes to claims, structure, terminology, and evidence support.
+8. Perform a final sentence-level, paragraph-level, and section-level flow audit so revised prose does not become a list of disconnected facts.
+9. Return a concise revision log after the edited text or edited file, noting major changes to claims, structure, terminology, and evidence support.
 
 ## Review Mode: List Suggestions Only
 

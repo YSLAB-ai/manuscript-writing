@@ -209,6 +209,16 @@ Bad: "The reduced resistance proves that the interface mechanism controls device
 
 Good: "The reduced resistance is consistent with an interface-related contribution to device behavior."
 
+- [ ] **Audit Multi-Level Flow and Logic**
+
+Perform a final logic-flow pass at the sentence, paragraph, and section levels. Ensure each sentence connects to the preceding and following context rather than reading as an isolated fact. Confirm that each paragraph has a clear internal progression, and that each section advances the larger argument in a coherent order.
+
+Decision rule: A technically correct sentence should still be revised or relocated if its relationship to the surrounding argument is unclear.
+
+Bad: "The device was measured at 77 K. Gallium nitride has a wide bandgap. The packaging parasitics were reduced."
+
+Good: "The device was measured at 77 K to evaluate low-temperature operation. In this regime, gallium nitride's wide bandgap supports high-field operation, while reduced packaging parasitics help isolate the device-level response."
+
 ## Phase 5: Final Output Audit
 
 - [ ] **Produce a Revision Log**
