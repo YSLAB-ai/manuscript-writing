@@ -125,14 +125,29 @@ The paragraph below is a user-provided example of AI-written prose. The revised 
 
 ### Review Mode Comments
 
-| Checklist item | Flagged text | Suggested action |
-| --- | --- |
-| Strip hyperbole | "remarkable", "intricate", "elegant biological symphony" | Replace subjective praise with specific mechanisms. |
-| Explain or remove metaphors | "memory librarian", "hard-wiring" | Use mechanistic terms or define the analogy briefly. |
-| Calibrate certainty | "which is why we vividly remember" | Hedge unless cited evidence supports the causal claim. |
-| Verify numerical claims | "billions of neurons" | Cite the magnitude or remove it. |
-| Use transitions logically | "In short" | The transition can stay if the sentence accurately summarizes the preceding evidence; the overgeneralized claim still needs revision. |
-| Verify citation coverage | claims about working memory, hippocampus, LTP, amygdala, sleep, and cortical storage | Add citations or mark these claims as needing verification. |
+- **Strip hyperbole**
+  - Flagged text: "remarkable", "intricate", "elegant biological symphony"
+  - Suggested action: Replace subjective praise with specific mechanisms.
+
+- **Explain or remove metaphors**
+  - Flagged text: "memory librarian", "hard-wiring"
+  - Suggested action: Use mechanistic terms or define the analogy briefly.
+
+- **Calibrate certainty**
+  - Flagged text: "which is why we vividly remember"
+  - Suggested action: Hedge unless cited evidence supports the causal claim.
+
+- **Verify numerical claims**
+  - Flagged text: "billions of neurons"
+  - Suggested action: Cite the magnitude or remove it.
+
+- **Use transitions logically**
+  - Flagged text: "In short"
+  - Suggested action: Keep the transition only if the sentence accurately summarizes the preceding evidence; revise the overgeneralized claim.
+
+- **Verify citation coverage**
+  - Flagged text: claims about working memory, hippocampus, LTP, amygdala, sleep, and cortical storage
+  - Suggested action: Add citations or mark these claims as needing verification.
 
 ### Revision Mode Output
 
