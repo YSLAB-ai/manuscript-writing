@@ -19,9 +19,69 @@ This skill has two modes:
 
 Both modes read `references/revision-checklist.md` before acting and follow the checklist sequentially. The skill uses verified facts only and flags unavailable evidence under `Needs Verification`.
 
-## Keywords
+## Example
 
-academic writing, scientific writing, manuscript revision, manuscript review, research writing, proposal writing, evidence-based editing, citation audit, AI writing review, Codex skill, Claude Code skill, OpenClaw skill, `SKILL.md`
+The image below demonstrates `review` mode: the source text remains unchanged while the skill marks weak spots and explains why they need attention.
+
+![manuscript-writing review demo](assets/demo-review.png)
+
+The paragraph below is a user-provided example of AI-written prose. The revised version demonstrates `revision` mode under the current checklist: preserve technical meaning, remove hyperbole, hedge unsupported causality, permit logical transitions, and flag claims that require citations.
+
+### Before
+
+> Memory formation in the human brain is one of the most remarkable and intricate processes in biology, transforming fleeting moments of experience into lasting knowledge, emotions, and skills that define who we are. It begins the instant we perceive the world through our senses--sights, sounds, smells, and touches are rapidly converted into electrical and chemical signals that travel along neural pathways. These signals first enter short-term or working memory, a temporary "holding area" supported by the prefrontal cortex. For information to endure, it must undergo encoding and consolidation, a process heavily orchestrated by the hippocampus, which acts as a kind of "memory librarian," indexing new experiences and linking them to existing knowledge.
+>
+> At the cellular level, memory formation relies on synaptic plasticity--the brain's ability to strengthen or weaken connections between neurons. When we repeat an experience or pay close attention to it, synapses fire more efficiently through a mechanism called long-term potentiation (LTP), essentially "hard-wiring" the memory into neural circuits. Emotional events receive extra reinforcement from the amygdala, which is why we vividly remember where we were during major life moments. Over hours and days (especially during deep sleep), these fragile traces are stabilized and distributed across the cortex for long-term storage.
+>
+> In short, every memory we form is the result of billions of neurons communicating, adapting, and reorganizing themselves--an elegant biological symphony that turns the chaos of daily life into the coherent story of our lives.
+
+### Review Mode Comments
+
+- **Strip hyperbole**
+  - Flagged text: "remarkable", "intricate", "elegant biological symphony"
+  - Suggested action: Replace subjective praise with specific mechanisms.
+
+- **Explain or remove metaphors**
+  - Flagged text: "memory librarian", "hard-wiring"
+  - Suggested action: Use mechanistic terms or define the analogy briefly.
+
+- **Calibrate certainty**
+  - Flagged text: "which is why we vividly remember"
+  - Suggested action: Hedge unless cited evidence supports the causal claim.
+
+- **Verify numerical claims**
+  - Flagged text: "billions of neurons"
+  - Suggested action: Cite the magnitude or remove it.
+
+- **Use transitions logically**
+  - Flagged text: "In short"
+  - Suggested action: Keep the transition only if the sentence accurately summarizes the preceding evidence; revise the overgeneralized claim.
+
+- **Verify citation coverage**
+  - Flagged text: claims about working memory, hippocampus, LTP, amygdala, sleep, and cortical storage
+  - Suggested action: Add citations or mark these claims as needing verification.
+
+### Revision Mode Output
+
+> Memory formation converts sensory experience into neural representations that can support later retrieval, learning, and behavior. Sensory information is encoded as neural activity. Selected information can be maintained transiently in working memory, with prefrontal networks contributing to maintenance and control [citation needed]. Longer-lasting memories require encoding and consolidation. The hippocampus contributes to consolidation by binding elements of an experience and linking new information with existing representations [citation needed].
+>
+> At the cellular level, memory formation depends in part on synaptic plasticity, the activity-dependent strengthening or weakening of synaptic connections. Repeated or salient neural activity can increase synaptic efficacy through mechanisms such as long-term potentiation (LTP), but LTP should not be treated as the only mechanism without specifying the memory type, model system, and evidence base [citation needed]. Emotional salience can modulate consolidation through amygdala-hippocampal interactions, which may contribute to stronger recall of emotionally significant events [citation needed]. Over hours to days, including during sleep, initially labile traces can become more stable and distributed across cortical networks [citation needed].
+>
+> Thus, memory formation is a multi-scale process spanning sensory encoding, synaptic modification, systems-level consolidation, and retrieval. A manuscript-ready version should specify the memory type, species or model system, measurement method, and citation support for each mechanistic claim.
+
+### Revision Log
+
+- Removed subjective intensifiers and metaphor-heavy phrasing.
+- Replaced broad identity-focused language with evidence-bounded scientific claims.
+- Hedged causal statements about emotional salience and recall.
+- Kept a logical summary transition where it accurately connects the conclusion to the preceding paragraph.
+- Added citation placeholders instead of inventing support.
+
+### Needs Verification
+
+- Add citations for the roles of working memory, the prefrontal cortex, hippocampal consolidation, synaptic plasticity, LTP, amygdala modulation, and sleep-dependent consolidation.
+- Confirm whether the paragraph should remain general or be narrowed to a specific memory type, species or model system, method, or evidence base.
+- Verify whether the intended audience needs simplified definitions for LTP, consolidation, and cortical redistribution.
 
 ## Compatibility
 
@@ -106,70 +166,6 @@ For Claude Code:
 ```text
 /manuscript-writing review mode: critique this introduction without editing it.
 ```
-
-## Example
-
-The image below demonstrates `review` mode: the source text remains unchanged while the skill marks weak spots and explains why they need attention.
-
-![manuscript-writing review demo](assets/demo-review.png)
-
-The paragraph below is a user-provided example of AI-written prose. The revised version demonstrates `revision` mode under the current checklist: preserve technical meaning, remove hyperbole, hedge unsupported causality, permit logical transitions, and flag claims that require citations.
-
-### Before
-
-> Memory formation in the human brain is one of the most remarkable and intricate processes in biology, transforming fleeting moments of experience into lasting knowledge, emotions, and skills that define who we are. It begins the instant we perceive the world through our senses--sights, sounds, smells, and touches are rapidly converted into electrical and chemical signals that travel along neural pathways. These signals first enter short-term or working memory, a temporary "holding area" supported by the prefrontal cortex. For information to endure, it must undergo encoding and consolidation, a process heavily orchestrated by the hippocampus, which acts as a kind of "memory librarian," indexing new experiences and linking them to existing knowledge.
->
-> At the cellular level, memory formation relies on synaptic plasticity--the brain's ability to strengthen or weaken connections between neurons. When we repeat an experience or pay close attention to it, synapses fire more efficiently through a mechanism called long-term potentiation (LTP), essentially "hard-wiring" the memory into neural circuits. Emotional events receive extra reinforcement from the amygdala, which is why we vividly remember where we were during major life moments. Over hours and days (especially during deep sleep), these fragile traces are stabilized and distributed across the cortex for long-term storage.
->
-> In short, every memory we form is the result of billions of neurons communicating, adapting, and reorganizing themselves--an elegant biological symphony that turns the chaos of daily life into the coherent story of our lives.
-
-### Review Mode Comments
-
-- **Strip hyperbole**
-  - Flagged text: "remarkable", "intricate", "elegant biological symphony"
-  - Suggested action: Replace subjective praise with specific mechanisms.
-
-- **Explain or remove metaphors**
-  - Flagged text: "memory librarian", "hard-wiring"
-  - Suggested action: Use mechanistic terms or define the analogy briefly.
-
-- **Calibrate certainty**
-  - Flagged text: "which is why we vividly remember"
-  - Suggested action: Hedge unless cited evidence supports the causal claim.
-
-- **Verify numerical claims**
-  - Flagged text: "billions of neurons"
-  - Suggested action: Cite the magnitude or remove it.
-
-- **Use transitions logically**
-  - Flagged text: "In short"
-  - Suggested action: Keep the transition only if the sentence accurately summarizes the preceding evidence; revise the overgeneralized claim.
-
-- **Verify citation coverage**
-  - Flagged text: claims about working memory, hippocampus, LTP, amygdala, sleep, and cortical storage
-  - Suggested action: Add citations or mark these claims as needing verification.
-
-### Revision Mode Output
-
-> Memory formation converts sensory experience into neural representations that can support later retrieval, learning, and behavior. Sensory information is encoded as neural activity. Selected information can be maintained transiently in working memory, with prefrontal networks contributing to maintenance and control [citation needed]. Longer-lasting memories require encoding and consolidation. The hippocampus contributes to consolidation by binding elements of an experience and linking new information with existing representations [citation needed].
->
-> At the cellular level, memory formation depends in part on synaptic plasticity, the activity-dependent strengthening or weakening of synaptic connections. Repeated or salient neural activity can increase synaptic efficacy through mechanisms such as long-term potentiation (LTP), but LTP should not be treated as the only mechanism without specifying the memory type, model system, and evidence base [citation needed]. Emotional salience can modulate consolidation through amygdala-hippocampal interactions, which may contribute to stronger recall of emotionally significant events [citation needed]. Over hours to days, including during sleep, initially labile traces can become more stable and distributed across cortical networks [citation needed].
->
-> Thus, memory formation is a multi-scale process spanning sensory encoding, synaptic modification, systems-level consolidation, and retrieval. A manuscript-ready version should specify the memory type, species or model system, measurement method, and citation support for each mechanistic claim.
-
-### Revision Log
-
-- Removed subjective intensifiers and metaphor-heavy phrasing.
-- Replaced broad identity-focused language with evidence-bounded scientific claims.
-- Hedged causal statements about emotional salience and recall.
-- Kept a logical summary transition where it accurately connects the conclusion to the preceding paragraph.
-- Added citation placeholders instead of inventing support.
-
-### Needs Verification
-
-- Add citations for the roles of working memory, the prefrontal cortex, hippocampal consolidation, synaptic plasticity, LTP, amygdala modulation, and sleep-dependent consolidation.
-- Confirm whether the paragraph should remain general or be narrowed to a specific memory type, species or model system, method, or evidence base.
-- Verify whether the intended audience needs simplified definitions for LTP, consolidation, and cortical redistribution.
 
 ## Repository Layout
 
