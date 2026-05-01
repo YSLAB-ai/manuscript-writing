@@ -61,13 +61,17 @@ The paragraph below is a user-provided example of AI-written prose. The revised 
   - Flagged text: claims about working memory, hippocampus, LTP, amygdala, sleep, and cortical distribution
   - Suggested action: Add citations or mark these claims as needing verification.
 
+- **Audit multi-level flow and logic**
+  - Flagged text: the paragraph sequence moves from sensory encoding to working memory, hippocampal consolidation, synaptic plasticity, emotional modulation, and cortical distribution.
+  - Suggested action: Add sentence-to-sentence links so these claims read as one process rather than separate facts.
+
 ### Revision Mode Output
 
-> Memory formation transforms sensory experience into knowledge, emotional associations, and skills. Sensory inputs are converted into electrical and chemical neural signals. Some information can be maintained briefly in short-term or working memory, a process associated with the prefrontal cortex [citation needed]. For information to persist, it must undergo encoding and consolidation. The hippocampus supports these processes by indexing new experiences and linking them to existing knowledge [citation needed].
+> Memory formation transforms sensory experience into knowledge, emotional associations, and skills. The process begins when sensory inputs are converted into electrical and chemical neural signals. Some of this information can be maintained briefly in short-term or working memory, a process associated with the prefrontal cortex [citation needed]. For information to persist beyond this temporary state, it must undergo encoding and consolidation. The hippocampus supports this transition by indexing new experiences and linking them to existing knowledge [citation needed].
 >
-> At the cellular level, memory formation relies on synaptic plasticity, the capacity of synaptic connections to strengthen or weaken over time. Repeated experience or attention can increase synaptic efficacy through mechanisms such as long-term potentiation (LTP) [citation needed]. Emotional events can receive additional reinforcement from the amygdala, which may help explain stronger recall of major life events [citation needed]. Over hours to days, especially during deep sleep, initially fragile memory traces can stabilize and become distributed across the cortex [citation needed].
+> These systems-level changes depend on cellular mechanisms. Synaptic plasticity allows synaptic connections to strengthen or weaken over time. When an experience is repeated or receives attention, synaptic efficacy can increase through mechanisms such as long-term potentiation (LTP) [citation needed]. Emotional events can receive additional reinforcement from the amygdala, which may help explain stronger recall of major life events [citation needed]. Over hours to days, especially during deep sleep, initially fragile memory traces can stabilize and become distributed across the cortex [citation needed].
 >
-> In short, memory formation depends on neural communication, synaptic adaptation, and systems-level reorganization. These processes convert sensory experience into information that can be maintained, consolidated, and later recalled.
+> In short, memory formation links sensory encoding, temporary maintenance, consolidation, synaptic adaptation, emotional modulation, and cortical distribution. These connected processes convert sensory experience into information that can be maintained, consolidated, and later recalled.
 
 ### Revision Log
 
@@ -75,6 +79,7 @@ The paragraph below is a user-provided example of AI-written prose. The revised 
 - Replaced broad identity-focused language with evidence-bounded descriptions drawn from the source paragraph.
 - Hedged causal statements about emotional salience and recall.
 - Kept a logical summary transition where it accurately connects the conclusion to the preceding paragraph.
+- Added sentence-to-sentence links so the revision reads as a connected process rather than isolated facts.
 - Added citation placeholders instead of inventing support.
 
 ### Needs Verification
