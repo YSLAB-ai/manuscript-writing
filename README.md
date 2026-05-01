@@ -95,7 +95,7 @@ For Claude Code:
 
 The before text below is a user-provided example of AI-written prose. The after text demonstrates the skill's editing style; factual claims still need source verification before manuscript use.
 
-![before and after manuscript-writing demo](assets/demo-before-after.png)
+![tracked-change style manuscript-writing demo](assets/demo-track-changes.svg)
 
 ### Before
 
@@ -137,7 +137,7 @@ The before text below is a user-provided example of AI-written prose. The after 
 SKILL.md
 README.md
 assets/hero.png
-assets/demo-before-after.png
+assets/demo-track-changes.svg
 agents/openai.yaml
 references/revision-checklist.md
 ```
