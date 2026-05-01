@@ -1,5 +1,9 @@
 # manuscript-writing
 
+![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
+![Skill format](https://img.shields.io/badge/skill-SKILL.md-blue.svg)
+![Agents](https://img.shields.io/badge/agents-Codex%20%7C%20Claude%20Code%20%7C%20OpenClaw-purple.svg)
+
 ![manuscript-writing hero](assets/hero.png)
 
 `manuscript-writing` is an installable `SKILL.md` skill for revising and reviewing scientific, technical, and academic writing.
@@ -14,6 +18,18 @@ This skill has two modes:
 - `review`: lists actionable suggestions without editing the source document.
 
 Both modes read `references/revision-checklist.md` before acting and follow the checklist sequentially. The skill uses verified facts only and flags unavailable evidence under `Needs Verification`.
+
+## Keywords
+
+academic writing, scientific writing, manuscript revision, manuscript review, research writing, proposal writing, evidence-based editing, citation audit, AI writing review, Codex skill, Claude Code skill, OpenClaw skill, `SKILL.md`
+
+## Compatibility
+
+| Agent | Install target | Invocation style |
+| --- | --- | --- |
+| Codex | `${CODEX_HOME:-$HOME/.codex}/skills/manuscript-writing` | `Use $manuscript-writing ...` |
+| Claude Code | `~/.claude/skills/manuscript-writing` or `.claude/skills/manuscript-writing` | `/manuscript-writing ...` |
+| OpenClaw | `~/.openclaw/skills/manuscript-writing` or `skills/manuscript-writing` | Use when the request matches the skill description |
 
 ## Install
 
@@ -143,10 +159,28 @@ The paragraph below is a user-provided example of AI-written prose. The revised 
 ## Repository Layout
 
 ```text
+LICENSE
+CONTRIBUTING.md
+CONTRIBUTORS.md
 SKILL.md
 README.md
+.gitignore
+.github/ISSUE_TEMPLATE/skill-feedback.md
+.github/pull_request_template.md
 assets/hero.png
 assets/demo-review.png
 agents/openai.yaml
 references/revision-checklist.md
 ```
+
+## Contributing
+
+Checklist improvements, clearer examples, and install fixes are welcome. Please see [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+
+## Contributors
+
+See [CONTRIBUTORS.md](CONTRIBUTORS.md). Current contributors are derived from git history.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
