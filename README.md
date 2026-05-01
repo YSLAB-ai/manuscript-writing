@@ -25,7 +25,7 @@ The image below demonstrates `review` mode: the source text remains unchanged wh
 
 ![manuscript-writing review demo](assets/demo-review.png)
 
-The paragraph below is a user-provided example of AI-written prose. The revised version demonstrates `revision` mode under the current checklist: preserve technical meaning, remove hyperbole, hedge unsupported causality, permit logical transitions, and flag claims that require citations.
+The paragraph below is a user-provided example of AI-written prose. The revised version demonstrates `revision` mode under the current checklist: preserve technical meaning, remove hyperbole, hedge unsupported causality, permit logical transitions, and flag claims that require citations. Citation placeholders mark unresolved verification needs; they do not add evidence.
 
 ### Before
 
@@ -58,21 +58,21 @@ The paragraph below is a user-provided example of AI-written prose. The revised 
   - Suggested action: Keep the transition only if the sentence accurately summarizes the preceding evidence; revise the overgeneralized claim.
 
 - **Verify citation coverage**
-  - Flagged text: claims about working memory, hippocampus, LTP, amygdala, sleep, and cortical storage
+  - Flagged text: claims about working memory, hippocampus, LTP, amygdala, sleep, and cortical distribution
   - Suggested action: Add citations or mark these claims as needing verification.
 
 ### Revision Mode Output
 
-> Memory formation converts sensory experience into neural representations that can support later retrieval, learning, and behavior. Sensory information is encoded as neural activity. Selected information can be maintained transiently in working memory, with prefrontal networks contributing to maintenance and control [citation needed]. Longer-lasting memories require encoding and consolidation. The hippocampus contributes to consolidation by binding elements of an experience and linking new information with existing representations [citation needed].
+> Memory formation transforms sensory experience into knowledge, emotional associations, and skills. Sensory inputs are converted into electrical and chemical neural signals. Some information can be maintained briefly in short-term or working memory, a process associated with the prefrontal cortex [citation needed]. For information to persist, it must undergo encoding and consolidation. The hippocampus supports these processes by indexing new experiences and linking them to existing knowledge [citation needed].
 >
-> At the cellular level, memory formation depends in part on synaptic plasticity, the activity-dependent strengthening or weakening of synaptic connections. Repetition or attention can increase synaptic efficacy through mechanisms such as long-term potentiation (LTP) [citation needed]. Emotional salience can modulate consolidation through the amygdala, which may contribute to stronger recall of emotionally significant events [citation needed]. Over hours to days, including during deep sleep, initially labile traces can become more stable and distributed across cortical networks [citation needed].
+> At the cellular level, memory formation relies on synaptic plasticity, the capacity of synaptic connections to strengthen or weaken over time. Repeated experience or attention can increase synaptic efficacy through mechanisms such as long-term potentiation (LTP) [citation needed]. Emotional events can receive additional reinforcement from the amygdala, which may help explain stronger recall of major life events [citation needed]. Over hours to days, especially during deep sleep, initially fragile memory traces can stabilize and become distributed across the cortex [citation needed].
 >
-> Thus, memory formation is a multi-scale process spanning sensory encoding, synaptic modification, systems-level consolidation, and retrieval. A manuscript-ready version should cite each mechanistic claim and define the intended scope of the discussion.
+> In short, memory formation depends on neural communication, synaptic adaptation, and systems-level reorganization. These processes convert sensory experience into information that can be maintained, consolidated, and later recalled.
 
 ### Revision Log
 
 - Removed subjective intensifiers and metaphor-heavy phrasing.
-- Replaced broad identity-focused language with evidence-bounded scientific claims.
+- Replaced broad identity-focused language with evidence-bounded descriptions drawn from the source paragraph.
 - Hedged causal statements about emotional salience and recall.
 - Kept a logical summary transition where it accurately connects the conclusion to the preceding paragraph.
 - Added citation placeholders instead of inventing support.
@@ -81,7 +81,7 @@ The paragraph below is a user-provided example of AI-written prose. The revised 
 
 - Add citations for the roles of working memory, the prefrontal cortex, hippocampal consolidation, synaptic plasticity, LTP, amygdala modulation, and sleep-dependent consolidation.
 - Confirm whether the paragraph should remain general or be narrowed to a specific memory type, organism, method, or evidence base.
-- Verify whether the intended audience needs simplified definitions for LTP, consolidation, and cortical redistribution.
+- Verify whether the intended audience needs simplified definitions for LTP, consolidation, and cortical distribution.
 
 ## Compatibility
 
