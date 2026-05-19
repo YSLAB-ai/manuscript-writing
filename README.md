@@ -19,6 +19,14 @@ This skill has two modes:
 
 Both modes read `references/revision-checklist.md` before acting and follow the checklist sequentially. The skill uses verified facts only and flags unavailable evidence under `Needs Verification`.
 
+## AI Slop Smoke Test
+
+![AI detector smoke test](assets/detector-check.svg)
+
+In the user-run GPTZero check for the example below, the original paragraph was reported as `100% AI-written`, while the revised paragraph was reported as human-written. That before/after result is a useful smoke test for what the checklist targets: unsupported praise, metaphor-heavy explanations, overconfident causality, missing citation boundaries, and disconnected fact-stacking.
+
+This is not a promise that every output will pass any detector, and it is not a claim that detector scores prove authorship. GPTZero's own support documentation describes AI-detection results as probabilistic and advises against using a detector result as the only proof for academic punishment or discipline. Use this section as a practical "less AI slop" demonstration, not as an authorship guarantee. See GPTZero's note on [interpreting AI-detection results](https://support.gptzero.me/articles/7549392421-how-do-i-interpret-results-from-gptzero-s-advanced-sentence-scanning).
+
 ## Example
 
 The image below demonstrates `review` mode: the source text remains unchanged while the skill marks weak spots and explains why they need attention.
@@ -201,6 +209,7 @@ README.md
 .github/pull_request_template.md
 assets/hero.png
 assets/demo-review.png
+assets/detector-check.svg
 agents/openai.yaml
 references/revision-checklist.md
 ```
