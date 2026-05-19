@@ -14,8 +14,8 @@ A few years ago, dissertation polishing meant a committee comment, a reference m
 
 This skill has two modes:
 
-- `revision`: edits the manuscript or supplied text directly.
-- `review`: lists actionable suggestions without editing the source document.
+- `revision`: edits the manuscript or supplied text directly. For `.doc`, `.docx`, or `.pdf` inputs, it creates a new revised document and leaves the original unchanged; comments are reserved for unresolved verification needs, rationale, or author questions.
+- `review`: comments on issues without editing the source. For pasted text, it lists actionable suggestions. For `.doc`, `.docx`, or `.pdf` inputs, it creates a new commented document with suggested revisions in the comments.
 
 Both modes read `references/revision-checklist.md` before acting and follow the checklist sequentially. The skill uses verified facts only and flags unavailable evidence under `Needs Verification`.
 
@@ -153,6 +153,13 @@ Use $manuscript-writing in revision mode on this manuscript section.
 Edit the text directly, preserve technical meaning, and return a revision log plus any Needs Verification items.
 ```
 
+For document files:
+
+```text
+Use $manuscript-writing in revision mode on this DOCX/PDF.
+Create a new revised document. Apply supported edits in the text, keep my original unchanged, and use comments only for unresolved verification notes or author questions.
+```
+
 For Claude Code:
 
 ```text
@@ -166,6 +173,13 @@ Use this when you want comments only.
 ```text
 Use $manuscript-writing in review mode on this draft.
 Do not edit the document. List issues, why they matter, and specific suggested actions.
+```
+
+For document files:
+
+```text
+Use $manuscript-writing in review mode on this DOCX/PDF.
+Create a new commented document. Do not edit the manuscript body; put suggested revisions, citation needs, and verification steps in comments.
 ```
 
 For Claude Code:
