@@ -21,7 +21,7 @@ Both modes read `references/revision-checklist.md` before acting and follow the 
 
 ## AI Slop Smoke Test
 
-![AI detector smoke test](assets/detector-check.svg)
+![AI detector smoke test](assets/detector-check.png)
 
 In the user-run GPTZero check for the example below, the original paragraph was reported as `100% AI-written`, while the revised paragraph was reported as human-written. That before/after result is a useful smoke test for what the checklist targets: unsupported praise, metaphor-heavy explanations, overconfident causality, missing citation boundaries, and disconnected fact-stacking.
 
@@ -209,7 +209,7 @@ README.md
 .github/pull_request_template.md
 assets/hero.png
 assets/demo-review.png
-assets/detector-check.svg
+assets/detector-check.png
 agents/openai.yaml
 references/revision-checklist.md
 ```
